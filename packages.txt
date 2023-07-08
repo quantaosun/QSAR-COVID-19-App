@@ -1,1 +1,1 @@
-default-jre
+java-jdk
