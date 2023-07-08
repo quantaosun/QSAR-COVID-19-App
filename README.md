@@ -7,6 +7,13 @@
 
 # Run the app locally
 
+pre-requirements
+
+- streamlit
+- sklearn
+- default-jre (java)
+- and normal packages like numpy, pandas
+
 ```
 git clone https://github.com/quantaosun/QSAR-COVID-19-App.git
 cd QSAR-COVID-19-App.git
