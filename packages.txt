@@ -1,2 +1,3 @@
 #java-jdk
-openjdk-8-jdk-headless
+#openjdk-8-jdk-headless
+java-8-openjdk-amd64
