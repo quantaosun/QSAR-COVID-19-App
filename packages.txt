@@ -1,1 +1,1 @@
-default-jre-headless
+openjdk==11.0.19 
