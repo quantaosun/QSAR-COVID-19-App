@@ -2,9 +2,7 @@
 
 ## By providing a simple SMILES string, this app will give you a prediction of pIC50 of 3C-like protease.
 
-This is a rebuilt version of 
-
-Only works on Linux and Mac, Windows not supported
+Only works on Linux,Mac and soon will be working on the cloud as well, Windows not supported
 
 # Run the app locally
 
