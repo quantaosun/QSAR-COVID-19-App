@@ -42,8 +42,11 @@ Next, you can click Upload a txt file containing the SMILES strings you want to 
 like,
 
 ``` c1ccccc1 benzene``` 
+
 if you have two molecules
-``` c1ccccc1 Molecule1
+
+```
+    c1ccccc1 Molecule1
     C1CCCCC1 Molecule2
 ```
 <img width="1260" alt="image" src="https://github.com/quantaosun/QSAR-COVID-19-App/assets/75652473/102176ae-c30c-48df-85f0-fc43491ff38f">
