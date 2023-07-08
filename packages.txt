@@ -1,1 +1,1 @@
-default-jre
+java==11.0.19
