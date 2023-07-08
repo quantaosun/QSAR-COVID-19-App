@@ -52,10 +52,10 @@ This app allows you to predict the bioactivity towards inhibting the COVID19 3C-
 """)
 
 # Sidebar
-with st.sidebar.header('1. 上传待预测小分子结构'):
+with st.sidebar.header('上传待预测小分子结构'):
     uploaded_file = st.sidebar.file_uploader("Upload your input file", type=['txt'])
     st.sidebar.markdown("""
-[Example input file](https://raw.githubusercontent.com/dataprofessor/bioactivity-prediction-app/main/example_acetylcholinesterase.txt)
+[Example input file](https://raw.githubusercontent.com/quantaosun/QSAR-COVID-19-App/main/example_covid19.txt)
 """)
 
 if st.sidebar.button('预测'):
