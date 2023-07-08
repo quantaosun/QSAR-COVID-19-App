@@ -1,1 +1,1 @@
-openjdk-20-jre
+
