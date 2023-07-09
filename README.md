@@ -2,7 +2,9 @@
 
 ## By providing a simple SMILES string, this app will give you a prediction of pIC50 of 3C-like protease.
 
-Only works on Linux,Mac and soon will be working on the cloud as well, Windows not supported
+Only works on Linux, and Mac 
+
+https://github.com/quantaosun/QSAR-COVID-19-App/assets/75652473/5f167897-e293-4c89-9da2-62cfcb992f50
 
 # Run the app locally
 
@@ -49,7 +51,6 @@ if you have two molecules
     c1ccccc1 Molecule1
     C1CCCCC1 Molecule2
 ```
-<img width="1260" alt="image" src="https://github.com/quantaosun/QSAR-COVID-19-App/assets/75652473/102176ae-c30c-48df-85f0-fc43491ff38f">
 
 - APP rebuild  by [Quantao Sun](https://github.com/quantaosun)
 - App framework from `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
