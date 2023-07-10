@@ -47,12 +47,5 @@ Next, you can click Upload a txt file containing the SMILES strings you want to 
 like,
 
 ``` c1ccccc1 benzene``` 
-
-if you have two molecules
-
-```
-    c1ccccc1 Molecule1
-    C1CCCCC1 Molecule2
-```
-
+You are advised to predict one molecule at one time for the moment.
 
