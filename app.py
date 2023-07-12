@@ -48,7 +48,7 @@ This application is designed to predict the bioactivity of molecules in inhibiti
 leveraging the Python and Streamlit framework developed by Chanin Nantasenamat, also known as Data Professor. The molecular descriptors used for prediction are 
 calculated using PaDEL-Descriptor, as described in the corresponding research paper.
 **Credits**
-- APP  built by [Quantao Sun](https://github.com/quantaosun)
+- Preidction math model detail see [Github repo](https://github.com/quantaosun/QSAR-COVID-19-App)
 - App framework from `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
@@ -87,4 +87,4 @@ if st.sidebar.button('预测'):
     # Apply trained model to make prediction on query compounds
     build_model(desc_subset)
 else:
-    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，smiles后可空格后跟一个名字，名字内不要有空格!')
+    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，smiles后可空格后跟一个名字，名字内不要有空格')
