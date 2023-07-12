@@ -45,11 +45,13 @@ st.markdown("""
 # 基于机器学习模型的新冠小分子抑制剂活性预测 (3C-like protease)
 
 This application is designed to predict the bioactivity of molecules in inhibiting the COVID-19 3C-like protein target. The app has been rebuilt by Quantao Sun, 
-leveraging the Python and Streamlit framework developed by Chanin Nantasenamat, also known as Data Professor. The molecular descriptors used for prediction are 
-calculated using PaDEL-Descriptor, as described in the corresponding research paper.
+leveraging the Python and Streamlit framework developed by Chanin Nantasenamat, also known as Data Professor. As described in the corresponding research paper, the molecular descriptors used for prediction are
+calculated using PaDEL-Descriptor.
+
 **Credits**
-- Preidction math model detail see [Github repo](https://github.com/quantaosun/QSAR-COVID-19-App)
-- App framework from `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
+- Built and deployed by Quantao Sun
+- Protein target and small molecules training set see [Github repo](https://github.com/quantaosun/QSAR-COVID-19-App)
+- App framework from `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat))
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
 """)
