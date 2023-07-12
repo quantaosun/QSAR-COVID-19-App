@@ -5,7 +5,7 @@ import subprocess
 import os
 import base64
 import pickle
-from sklearn import *
+#from sklearn import *
 
 # Molecular descriptor calculator
 def desc_calc():
