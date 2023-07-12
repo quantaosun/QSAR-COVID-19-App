@@ -87,4 +87,4 @@ if st.sidebar.button('预测'):
     # Apply trained model to make prediction on query compounds
     build_model(desc_subset)
 else:
-    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，只有smiles不要包含任何其他如名称等无关要素!')
+    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，smiles后可空格后跟一个名字，名字内不要有空格!')
