@@ -5,7 +5,6 @@ import subprocess
 import os
 import base64
 import pickle
-#from sklearn import *
 
 # Molecular descriptor calculator
 def desc_calc():
@@ -25,7 +24,7 @@ def filedownload(df):
 # Model building
 def build_model(input_data):
     # Reads in saved regression model
-    load_model = pickle.load(open('covid19_model2.pkl', 'rb'))
+    load_model = pickle.load(open('covid_organism_353_model.pkl', 'rb'))
     # Apply model to make predictions
     prediction = load_model.predict(input_data)
     st.header('**预测值**')
@@ -44,11 +43,12 @@ st.image(image, use_column_width=True)
 st.markdown("""
 # 基于机器学习模型的新冠小分子抑制剂活性预测 (3C-like protease)
 
-This application is designed to predict the bioactivity of molecules in inhibiting the COVID-19 3C-like protein target.
+This application is designed to predict the bioactivity of molecules inhibiting the COVID-19 3C-like protein target. 10086 small molecules data points were downloaded from the Chembl database but only 657 of them has ready-to-use IC50 values. To improve the reliability of the model, only IC50 > 10,000 and IC50 < 1,000 nanomolar were used, leaving only 353 data points.  A random forest prediction model was then built between molecular descriptors and IC50 values, with these 353 data points.
+
 
 **Credits**
 - Built and deployed by [Quantao Sun](https://github.com/quantaosun)
-- Protein target and small molecules detail see [Github repo](https://github.com/quantaosun/QSAR-COVID-19-App)
+- Model training details see [Github repo](https://github.com/quantaosun/QSAR-COVID-19-App)
 - App framework from `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat))
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
@@ -87,4 +87,9 @@ if st.sidebar.button('预测'):
     # Apply trained model to make prediction on query compounds
     build_model(desc_subset)
 else:
-    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，smiles后可空格后跟一个名字，名字内不要有空格')
+    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，只有smiles不要包含任何其他如名称等无关要素!')
+
+    # Logo image
+image = Image.open('regression.png')
+
+st.image(image, use_column_width=True)
