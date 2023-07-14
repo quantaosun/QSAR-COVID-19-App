@@ -91,5 +91,5 @@ else:
 
     # Logo image
 image = Image.open('regression.png')
-st.header('Model built by training set ')
+st.header('Model built by training set, r2=0.79 ')
 st.image(image, use_column_width=True)
