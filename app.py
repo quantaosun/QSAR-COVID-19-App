@@ -88,7 +88,7 @@ if st.sidebar.button('预测'):
     # Apply the trained model to make predictions on query compounds
     build_model(desc_subset)
 else:
-    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，后面可以不跟或者跟一个改行分子的编码或者名字，编码或者名字不能有空格!')
+    st.info('请在左侧上传未知小分子SMILES开始预测,上传的格式应为txt格式，其中的SMILES应当为每行一个分子，后面可以不跟或者跟一个该行分子的编码或者名字，编码或者名字不能有空格!')
 
     # Logo image
 image = Image.open('regression.png')
