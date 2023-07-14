@@ -46,6 +46,7 @@ st.markdown("""
 - This application is designed to predict the bioactivity of molecules inhibiting the COVID-19 virus, not a single protein. Out of the initial 10,086 small molecule data points downloaded from the Chembl database, only 657 had readily available IC50 values. To enhance the reliability of the model, IC50 values between 1,000 and 10,000 nanomolar were excluded due to concerns about the accuracy and reproducibility of the biology assay. This filtering process resulted in a refined dataset of 353 data points, which were used to build a random forest prediction model correlating molecular descriptors with IC50 values.
 - 该应用程序旨在预测抑制COVID-19病毒的分子的生物活性。从Chembl数据库中下载了10,086个小分子数据点，其中只有657个具有可用的IC50值。为了提高模型的可靠性，排除了1,000至10,000纳摩尔之间的IC50值，原因是对生物学测定的准确性和重复性存在疑虑。这一筛选过程导致了353个数据点的精选数据集，用于构建分子描述符和IC50值之间的随机森林预测模型。
 - 模型训练集合截止到2023年7月
+
 **Credits**
 - Built and deployed by [Quantao Sun](https://github.com/quantaosun)
 - Model training details see [Github repo](https://github.com/quantaosun/QSAR-COVID-19-App)
