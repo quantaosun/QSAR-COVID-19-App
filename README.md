@@ -1,5 +1,7 @@
 # QSAR-COVID-19-App
 
+# Try it as a web app here https://sars-covid-3cl-prediciton.streamlit.app/ 
+
 - App framework from `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 - References 1 https://github.com/dataprofessor/bioactivity-prediction-app
